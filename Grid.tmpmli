@@ -1,0 +1,20 @@
+(* ************************************************************************** *)
+(*                                                                            *)
+(*                                                        :::      ::::::::   *)
+(*   Grid.mli                                           :+:      :+:    :+:   *)
+(*                                                    +:+ +:+         +:+     *)
+(*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        *)
+(*                                                +#+#+#+#+#+   +#+           *)
+(*   Created: 2015/06/20 09:46:24 by niccheva          #+#    #+#             *)
+(*   Updated: 2015/06/20 15:35:47 by jerdubos         ###   ########.fr       *)
+(*                                                                            *)
+(* ************************************************************************** *)
+
+type t
+
+val getRow			: t -> int -> char list
+val changeValue		: t -> int -> int -> char -> ()
+val displayGrid	: t -> unit
+val checkGrid		: t -> bool
+val checkWin		: t -> bool
+
