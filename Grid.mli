@@ -3,14 +3,16 @@
 (*                                                        :::      ::::::::   *)
 (*   Grid.mli                                           :+:      :+:    :+:   *)
 (*                                                    +:+ +:+         +:+     *)
-(*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        *)
+(*   By: jerdubos <jerdubos@student.42.fr>          +#+  +:+       +#+        *)
 (*                                                +#+#+#+#+#+   +#+           *)
-(*   Created: 2015/06/20 09:46:24 by niccheva          #+#    #+#             *)
-(*   Updated: 2015/06/21 10:48:23 by niccheva         ###   ########.fr       *)
+(*   Created: 2015/06/21 21:20:37 by jerdubos          #+#    #+#             *)
+(*   Updated: 2015/06/21 21:44:53 by jerdubos         ###   ########.fr       *)
 (*                                                                            *)
 (* ************************************************************************** *)
 
-type t
+type 'a g
 
-val getRow		: t -> int -> char list
-val changeValue	: t -> int -> int -> char -> unit
+val displayGrid : char g -> unit
+val gridZero : char g
+val changeValue : 'a g -> int -> int -> 'a -> 'a g
+val checkValue : char g -> int -> int -> bool
