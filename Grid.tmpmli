@@ -6,14 +6,14 @@
 (*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        *)
 (*                                                +#+#+#+#+#+   +#+           *)
 (*   Created: 2015/06/20 09:46:24 by niccheva          #+#    #+#             *)
-(*   Updated: 2015/06/20 15:35:47 by jerdubos         ###   ########.fr       *)
+(*   Updated: 2015/06/21 10:48:46 by niccheva         ###   ########.fr       *)
 (*                                                                            *)
 (* ************************************************************************** *)
 
 type t
 
 val getRow			: t -> int -> char list
-val changeValue		: t -> int -> int -> char -> ()
+val changeValue		: t -> int -> int -> char -> unit
 val displayGrid	: t -> unit
 val checkGrid		: t -> bool
 val checkWin		: t -> bool

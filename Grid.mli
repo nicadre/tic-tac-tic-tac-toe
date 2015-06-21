@@ -6,11 +6,11 @@
 (*   By: niccheva <niccheva@student.42.fr>          +#+  +:+       +#+        *)
 (*                                                +#+#+#+#+#+   +#+           *)
 (*   Created: 2015/06/20 09:46:24 by niccheva          #+#    #+#             *)
-(*   Updated: 2015/06/20 15:05:02 by niccheva         ###   ########.fr       *)
+(*   Updated: 2015/06/21 10:48:23 by niccheva         ###   ########.fr       *)
 (*                                                                            *)
 (* ************************************************************************** *)
 
 type t
 
 val getRow		: t -> int -> char list
-val changeValue	: t -> int -> int -> char -> ()
+val changeValue	: t -> int -> int -> char -> unit
